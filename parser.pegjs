@@ -107,7 +107,7 @@ other_fields
  }
  /
  "Q:" _ t:tempo {
-    return t;
+    return ["tempo", t];
  }
 
 tempo = integer+ / ("C" note_length? "=" integer+) / (note_length_strict "=" integer+)
